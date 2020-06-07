@@ -1,0 +1,23 @@
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#image {
+    background: url('tallSprite.png'); /* ideally should be url('spritethisone.png'); */
+    position:absolute;
+    background-size:cover;
+    width:1200px; /*864px; 700px; */ /* no seem work if sprite and width, height diff sizes? */
+    height:1920px; /*592px; 480px;*/
+    left:50%;
+    margin-left:-570px; /* 600 but extra bc sunglasses not centered. half of original width*/
+    top: -530px;
+    transform:scale(0.50);
+} 
+
+/*delete */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
