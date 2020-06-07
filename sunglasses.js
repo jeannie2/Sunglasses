@@ -1,10 +1,10 @@
 var img = document.getElementById("image"); //sprite image is 1200 x 5760;
-//should have used sprite 24450px x 1117 (each 1630 x 1117) then scale (create sprite using original image sizes)
-var y = 0; //1630; initialise y and assign start position 
+var y = 0; //1920; initialise y and assign start position 
 
 img.style.backgroundPosition = "0px " + y + "px"; //initilaise. guess 0,0 is beginning of sprite (background image)
 
-console.log(y);
+console.log("click!")
+console.log("y:" + y);
 
 img.addEventListener("click", function(){ /* event is an object if no event, keycode undefined */
         if (y < 5760) { ///* rather than i !== 14 -> altho wont go higher than 14, still more clear */
@@ -15,7 +15,7 @@ img.addEventListener("click", function(){ /* event is an object if no event, key
         }
 
 img.style.backgroundPosition= "0px " + "-" + y + "px"; /* if omit -, reverses */
-console.log(y);
+console.log("y:" + y);
 //move whole sprite (background image) left by y amount to display 2nd image
 //https://stackoverflow.com/questions/45943352/background-position-in-css-sprites-using-negative-values
 });
