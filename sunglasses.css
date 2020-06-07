@@ -11,8 +11,8 @@ html {
     height:1920px; /*592px; 480px;*/
     left:50%;
     margin-left:-570px; /* 600 but extra bc sunglasses not centered. half of original width*/
-    top: -530px;
-    transform:scale(0.50);
+    top: -530px;/*why need?*/
+    transform:scale(0.50); /*why need?*/
 } 
 
 /*delete */
